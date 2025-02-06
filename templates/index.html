@@ -79,7 +79,7 @@
       </section>
       <!--================ Blog popular posts end =================-->
 
-      <!--================ Start Blog Post Area =================-->
+      <!--================ Blog last posts start =================-->
       <section class="blog-post-area section-margin mt-4">
         <div class="container">
           <div class="row">
@@ -100,7 +100,7 @@
                 </div>
                 <div class="details mt-20">
                   <h3>{{ fresh_post.title }}</h3>
-                  <p>{{ fresh_post.text }}</p>
+                  <p>{{ fresh_post.text|truncatechars:200 }}</p>
                   <a class="button" href="#">Read More <i class="ti-arrow-right"></i></a>
                 </div>
               </div>
@@ -156,7 +156,7 @@
           </div>
         </div>
       </section>
-      <!--================ End Blog Post Area =================-->
+      <!--================ Blog last posts end =================-->
     </main>
 
     <!--================ Start Footer Area =================-->
